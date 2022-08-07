@@ -1,0 +1,11 @@
+spring:
+  application.name: kafka-server-broker
+
+logging:
+  level:
+    root: INFO
+
+kafka:
+  config.file: kafka-server.properties
+  topics.name: topic1, topic2, topic3
+

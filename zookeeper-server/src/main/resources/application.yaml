@@ -1,0 +1,8 @@
+spring:
+  application.name: zookeeper-server
+
+logging:
+  level:
+    root: INFO
+
+zookeeper.config.file: zookeeper.properties
