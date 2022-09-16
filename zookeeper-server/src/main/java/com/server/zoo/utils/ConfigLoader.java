@@ -1,13 +1,14 @@
 package com.server.zoo.utils;
 
-import lombok.experimental.UtilityClass;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import javax.naming.ConfigurationException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-@UtilityClass
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ConfigLoader {
     public static Properties getConfig(String filename) throws ConfigurationException {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
